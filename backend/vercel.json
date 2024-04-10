@@ -9,7 +9,7 @@
             "src":"/(.*)",
             "dest":"/",
             "headers":{
-                "Access-Control-Allow-Origin":"*"
+                "Access-Control-Allow-Origin":"https://mern-blog-frontend-indol.vercel.app"
             }
         }
     ]
