@@ -15,7 +15,7 @@ function PostPage() {
        
     useEffect(()=>{
 
-        axios.get('http://localhost:3001/post/'+id)
+        axios.get('https://mern-blog-server-eight.vercel.app/post/'+id)
         .then(res=>{
             setPost(res.data)
            
@@ -40,7 +40,7 @@ if(!post) return <h1>No post</h1>
   return (
     <div className='posts-wrapper'>
         <div className="posts-container">
-            <img className='post-image' src={`http://localhost:3001/${post.cover}`}/>
+            <img className='post-image' src={`https://mern-blog-server-eight.vercel.app/${post.cover}`}/>
             {
                 canEdit &&
                  <Link to= {`/edit/${post._id}` }>

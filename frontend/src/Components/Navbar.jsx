@@ -10,14 +10,14 @@ function Navbar() {
   
   axios.defaults.withCredentials =true
   useEffect(()=>{
-       axios.get('http://localhost:3001/profile')
+       axios.get('https://mern-blog-server-eight.vercel.app/profile')
        .then(res=>setUserInfo(res.data))
        .catch(err=>console.log(err))
    
 
   },[])
    const handleLogout=()=>{
-    axios.post('http://localhost:3001/logout')
+    axios.post('https://mern-blog-server-eight.vercel.app/logout')
     .then(res=>{
       if(res.data.Status){
         document.location.reload()

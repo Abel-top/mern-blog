@@ -17,7 +17,7 @@ function EditPost() {
 
  useEffect(()=>{
      
-    axios.get('http://localhost:3001/post/'+id)
+    axios.get('https://mern-blog-server-eight.vercel.app/post/'+id)
     .then(res=>{
         setTitle(res.data.title)
         setContent(res.data.content)
@@ -43,7 +43,7 @@ function EditPost() {
         e.preventDefault()
         
         try {
-            const response = await axios.put("http://localhost:3001/post",data)
+            const response = await axios.put("https://mern-blog-server-eight.vercel.app/post",data)
              if(response.data.Status){
 
                  navigate('/post/'+id)

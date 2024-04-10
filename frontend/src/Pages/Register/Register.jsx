@@ -11,7 +11,7 @@ function Register() {
 })
 const  handleSubmit= async (e)=>{
  e.preventDefault()
-   await axios.post('http://localhost:3001/register',value)
+   await axios.post('https://mern-blog-server-eight.vercel.app/register',value)
    .then(res=>{
     
     console.log(res)
@@ -22,8 +22,8 @@ const  handleSubmit= async (e)=>{
       if(res.data.Status){
         alert("success")
 
+        navigate('/login')
       }
-        //  navigate('/login')
     })
    .catch(err=>{console.log(err)})
      

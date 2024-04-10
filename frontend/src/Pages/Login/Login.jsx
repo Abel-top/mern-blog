@@ -12,7 +12,7 @@ function Login() {
   axios.defaults.withCredentials = true;
  const handleSubmit= async (e)=>{
      e.preventDefault()
-     await axios.post('http://localhost:3001/login',value)
+     await axios.post('https://mern-blog-server-eight.vercel.app/login',value)
      .then(res=>{
       console.log(res)
          if(res.data.Message){

@@ -24,7 +24,7 @@ function CreatePost() {
         e.preventDefault()
         
         try {
-            const response = await axios.post("http://localhost:3001/createPost",data)
+            const response = await axios.post("https://mern-blog-server-eight.vercel.app/createPost",data)
            if(response.data.Status){
                 navigate('/')
             }

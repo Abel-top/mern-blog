@@ -11,7 +11,7 @@ function Post() {
    const getData=async ()=>{
 
     try {
-        const res = await axios.get('http://localhost:3001/posts')
+        const res = await axios.get('https://mern-blog-server-eight.vercel.app/posts')
         
          console.log(res)
         setPosts(res.data)
@@ -33,7 +33,7 @@ function Post() {
       posts.map((post,index)=>(
         <div className='p-container' key={index}>
             <Link to={`/post/${post._id}`}>
-            <img src={'http://localhost:3001/'+post.cover} />
+            <img src={'https://mern-blog-server-eight.vercel.app/'+post.cover} />
             </Link>
             <div className="texts">
 
