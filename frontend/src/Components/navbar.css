@@ -1,0 +1,53 @@
+.n-wrapper{ 
+   max-width: 700px;
+   margin: 0 auto;
+    
+}
+.n-container{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin-top: 20px;
+}
+.n-container .login-span{
+      color: rgb(117, 80, 80);
+      border: none;
+      text-decoration: none;
+      margin-right: 10px;
+      background: rgba(204, 158, 102, 0.445);
+      padding: 9px;
+      border-radius: 5px;
+      transition: all 0.2s ease-out;
+     
+}
+.n-container .register-span{
+    color: rgba(114, 79, 79, 0.767);
+    text-decoration: none;
+    background: rgb(194, 192, 189);
+    padding: 9px;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+} 
+.n-container .logo{ 
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(58, 59, 59);
+}
+.n-container .register-span:hover{
+background: rgb(172, 168, 168);
+color: rgb(44, 44, 44);
+}
+.n-container .login-span:hover{
+    background: rgb(175, 148, 148);
+    color: rgb(88, 88, 88);
+}
+
+.link {
+    padding: 10px;
+    text-decoration: none;
+    color:gray;
+}
+.link:hover{
+    color:rgb(77, 74, 74);
+}

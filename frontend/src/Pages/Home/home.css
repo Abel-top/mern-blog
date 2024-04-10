@@ -1,0 +1,26 @@
+.p-wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.p-container{
+   margin-top: 40px;
+   display: flex;
+ 
+   justify-content: space-around;
+}
+.p-container img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+}
+.p-container .texts {
+    padding: 10px;
+    line-height: 2rem;
+}
+.p-container img:hover{
+    scale:1.025;
+    cursor: pointer;
+}

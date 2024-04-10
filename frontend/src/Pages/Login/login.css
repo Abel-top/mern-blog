@@ -1,0 +1,42 @@
+
+form{
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 45px;
+    margin-top: 50px;
+}
+input{
+    display: block;
+    width: 50%;
+    padding: 9px;
+    color: rgb(79, 80, 82);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gainsboro;
+    border-radius: 4px;
+}
+input:focus{
+    border-bottom: 4px solid gainsboro;
+    
+}
+button{
+    width: 30%;
+    padding: 10px;
+    background: rgb(184, 182, 182);
+    border: none;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+form h1{
+    color: rgb(79, 80, 82);
+}

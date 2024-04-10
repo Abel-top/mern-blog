@@ -1,0 +1,7 @@
+.post-wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.post-container input{
+    width:100%;
+}
