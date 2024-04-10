@@ -16,8 +16,8 @@ const app=express()
 const salt = bcrypt.genSaltSync(10)
 app.use(cors(
   { 
+    origin:'https://mern-blog-frontend-indol.vercel.app/',
    credentials:true,
-   origin:'https://mern-blog-frontend-indol.vercel.app'
 }
 ))
 app.use(express.json())
