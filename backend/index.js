@@ -16,9 +16,11 @@ const app=express()
 const salt = bcrypt.genSaltSync(10)
 app.use(cors(
   { 
-    origin:'https://mern-blog-frontend-indol.vercel.app/',
-   credentials:true,
-}
+    origin: 'https://mern-blog-frontend-indol.vercel.app',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+    optionsSuccessStatus: 204,
+  }
 ))
 app.use(express.json())
 app.use(cookieParser())
