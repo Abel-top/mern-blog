@@ -27,7 +27,7 @@ app.use(cookieParser())
 
 app.use('/uploads',express.static('uploads'))
 
-mongoose.connect('mongodb+srv://jida:jida12$$@cruddb.5svatrx.mongodb.net/blogdb?retryWrites=true&w=majority&appName=crudDB')
+mongoose.connect('mongodb+srv://jida:<password>@cruddb.5svatrx.mongodb.net/blogdb?retryWrites=true&w=majority&appName=crudDB')
 
 app.post('/register',async (req,res)=>{
     const username=req.body.username
